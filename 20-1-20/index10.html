@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="0.wav" type="audio/wav">
+        <source src="" type="audio/mpeg">
+    </audio>
+    <button onclick="playAudio()" type="button">Play Audio</h2>
+    <button onclick="pauseAudio()" type="button">Pause Audio</h2>
+    <script> 
+        var x = document.getElementById("myAudio");
+        function playAudio(){
+            x.play();
+        }
+        function pauseAudio(){
+            x.pause();
+        }
+    </script>
+</body>
+</html>

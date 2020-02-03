@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h2 onclick="myF1(this)">myF1</h2>
+    <h2 onclick="myF2(this)">myF2</h2>
+    <script> 
+        var x = 0;
+        function myF1(id){
+            var x = 0;
+            id.innerHTML = "Local : "+x++;
+        }
+        function myF2(id){
+            id.innerHTML = "Global : "+x++;
+        }
+    </script>
+</body>
+</html>

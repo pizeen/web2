@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>
+        Math
+    </title>
+</head>
+<body>
+
+<h2>ป้อนค่าเป็นตัวเลข 1 ถึง 10</h2>
+<input id="numb" size=3/>
+<button type="button" onclick="myfunc()">Submit</button>
+<p id="demo"></p>
+
+<script language="JavaScript">
+    function myfunc(){   //agument
+    var x, text;
+    x = document.getElementById("numb").value;
+    if(isNaN(x) || x<1 || x> 10){
+        text = "Input not valid";
+    }else{
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+    }
+
+    document.bgColor = "black";                        // สีพื้นหลัง
+    document.fgColor = "white";                        // สีอตัวอักษร
+</script>
+
+</body>
+</html>

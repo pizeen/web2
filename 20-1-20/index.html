@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Number</title>
+</head>
+<body>
+
+<h2>ป้อนค่าเป็นตัวเลข 1 ถึง 10</h2>
+ป้อนค่า x <input id="get1" size=3/><br>
+ป้อนค่า y <input id="get2" size=3/><br>
+<button type="button" onclick="myfunc()">Submit</button>
+<p id="show"></p>
+
+<script language="JavaScript">
+    function myfunc(){                                  //agument
+        var x, y, text;                                 //สร้างตัวแปร
+        x = document.getElementById("get1").value;      //รับค่าสตริงมา เเล้วแปลงเป็นตัวเลข
+        y = document.getElementById("get2").value;
+        
+        if(isNaN(x) || x<1 || x> 10){                   //เชค Not a Namber(ไม่ใช่ตัวเลข), น้อยกว่า 1, มากกว่า 10
+            text = "x not valid";
+        }else if(isNaN(y) || y<1 || y> 10){
+            text = "y not valid";
+        }else{
+            text = "Input OK";
+        }
+        document.getElementById("show").innerHTML = text;   //แสดงข้อความ
+    }
+    document.bgColor = "black";                         // สีพื้นหลัง
+    document.fgColor = "white";                         // สีอตัวอักษร
+</script>
+
+</body>
+</html>

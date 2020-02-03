@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title></title>
+</head>
+<body onload="myF1();myF2()">
+    <script>
+        var x = "Global";
+        function myF1(){
+        var x = "Local";
+            alert(x);
+        }
+        function myF2(){
+            alert(x);
+        }
+    </script>
+</body>
+</html>
